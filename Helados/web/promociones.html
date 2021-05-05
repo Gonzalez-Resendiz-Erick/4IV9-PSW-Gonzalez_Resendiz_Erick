@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0,minimum-scale=1.0">
+    <script src="prefix.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <title>BEN AND JERRY'S</title>
+</head>
+<body class="index">
+    <div class="contenedor">
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <a href="usuarios.html">
+                        <h1>BEN AND JERRY'S</h1>
+                    </a>
+                </div>
+                <div class="menu1" id="show-menu">
+                    <nav class="navegacion">
+                        <ul class="menu">
+                            <li><a href="productos.html"><span>Productos<span></a></li>
+                            <li><a href="promociones.html"><span>Promociones</span></a></li>
+                            <li><a href="clientes_consulta.html"><span>Clientes<span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="nomain">
+            <article>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2 class="titulo">Añade mas Promociones</h2>
+                <form name="formularioregistro" action="registrar_promocion.jsp" method="POST">
+                    <label>Tipo:</label>
+                    <input type="text" name="tipo1" size="20" >
+                    <br>
+                    <label>Gramos:</label>
+                    <input type="text" name="gramos1" size="20" >
+                    <br>
+                    <label>Tamaño:</label>
+                    <input type="text" name="tamaño1" size="20" >
+                    <br>
+                    <label>Envase:</label>
+                    <input type="text" name="envase1" size="2" >
+                    <br>
+                    <label>Precio:</label>
+                    <input type="text" name="precio1" size="30" >
+                    <br>
+                    <label>Descuento:</label>
+                    <input type="text" name="descuento" size="30" >
+                    <br>
+                    <input type="submit" value="Nuevo Registro" >
+                    <input type="reset" value="Borrar Datos" >
+                </form>
+            </article>
+        </section>
+        <section>
+            <article>
+                <a href="admistrador.html"><h2 class="titulo">Regresar a la pagina Principal</h2></a>
+            </article>
+        </section>
+        <footer>
+            <section class="nombresfooter">
+                González Reséndiz Erick&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </section>
+        </footer>
+    </div>
+    
+</body>
+</html>

@@ -77,64 +77,7 @@ function problema2(){
 
 
 }
-function problema3(){
-    var car = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","Ñ","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
-    var text = document.querySelector('#p3-input').value;
-    var text = text.split(" ").join("");
-    var cont=0
 
-    for(var i=0;i<text.length;i++){
-        for(var k=0;k<car.length;k++){
-            if(text[i]==car[k]){
-                cont += 1;
-                break;
-            }else if(text[i]==","){
-                cont += 1;
-                break;
-            }
-        }
-    }
-    if(cont==text.length){
-        var words = text.split(",");
-        var carUn = new Array(words.length);
-        for(var i=0;i<carUn.length;i++){
-            carUn[i] = 0;
-        }
-        var carUnWord = new Array(car.length);
-        for(var i=0;i<words.length;i++){
-            var wor = words[i];
-            for(var k=0;k<carUnWord.length;k++){
-                carUnWord[k] = 0;
-            }
-            for(var k=0;k<car.length;k++){
-                for(var j=0;j<wor.length;j++){
-                    if(wor[j]==car[k]){
-                        carUnWord[k] += 1;
-                    }
-                }
-            }
-            for(var k=0;k<carUnWord.length;k++){
-                if(carUnWord[k]>0){
-                    carUn[i] += 1;
-                }
-            }
-        }
-        var max = 0;
-        var index;
-        for(var i=0;i<carUn.length;i++){
-            if(carUn[i]>max){
-                max = carUn[i];
-                index = i;
-            }
-        }
-        document.querySelector('#p3-output').textContent = 'La palabra : ' + words[index] + ', tiene '+ max +' caracteres especiales';
-    }else{
-        alert("Ingresaste un caracter invalido")
-    }
-
-    
-
-}
 /*
 
 problema 3

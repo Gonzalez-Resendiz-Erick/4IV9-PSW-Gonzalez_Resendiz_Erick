@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0,minimum-scale=1.0">
+    <script src="prefix.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <title>BEN AND JERRY'S</title>
+</head>
+<body class="index">
+    <div class="contenedor">
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <a href="examen.html">
+                        <h1>BEN AND JERRY'S</h1>
+                    </a>
+                </div>
+                <div class="menu1" id="show-menu">
+                    <nav class="navegacion">
+                        <ul class="menu">
+                            <li><a><span>Administrador<span></a>
+                                <ul class="submenu">
+                                    <li><a href="conocenos.html#nuestra_historia">Productos</a></li>
+                                    <li><a href="conocenos.html#mision">Promociones</a></li>
+                                </ul>
+                            </li>
+                            <li><a><span>&nbsp;&nbsp;Servicios&nbsp;&nbsp;&nbsp;&nbsp;</span></a>
+                                <ul class="submenu">
+                                    <li><a href="agenda.html">Agenda</a></li>
+                                    <li><a href="calendario.html">Calendario CM</a></li>
+                                    <li><a href="foro.html">Foro Q&A</a></li>
+                                    <li><a href="informacion.html">Información</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="logros.html"><span>Logros</span></a></li>
+                            <li><a href="contacto.html"><span>Contacto</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <ul class="menu2" data-animation="to-up">
+                    <li>
+                        <a href="iniciarsesion.html">
+                            <span><i class="fas fa-user-circle" aria-hidden=true></i></span>
+                            <span class="about">Log In</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+            <div class="contenedor-todo">
+                <section class="main">
+                        <div class="slider">   
+                            <ul>
+                                <li><img src="./images/imageninfo.jpg" width="75%" height="440px"></li>
+                                <li><img src="./images/fotoindex2.jpg" width="75%" height="440px"></li>    
+                                <li><img src="./images/fotoindex3.jpg" width="75%" height="440px"></li>
+                            </ul>     
+                        </div> 
+                        <div class="button-container">
+                            <div>
+                                <a href="informacion.html#d1">MÁS INFORMACIÓN.</a>
+                            </div>
+                        </div>
+                        <p class="primertextindex">
+                            ¡QUEREMOS MEJORAR TU SALUD SEXUAL!
+                        </p>
+                </section>
+            </div>
+        <section class="nomain">
+            <article>
+                <h2 class="titulo">¿POR QUÉ EXISTIMOS? :)</h2>
+                <p>
+                    Consideramos que el problema de la baja salud Sexual en México es de primera necesidad de 
+                    solucionar por lo que se propone realizar una página que posea toda la información necesaria
+                    para prevenir embarazos e ITS (métodos anticonceptivos, modo de uso, etc.), un calendario de 
+                    menstruación para las mujeres para llevar orden de las fases de su ciclo menstrual, una agenda
+                    de contactos para tener un registro de las personas con las que se ha tenido algún tipo de 
+                    contacto sexual para en caso haber sospechas de alguna ITS o un embarazo, saber a quién contactar
+                    y un foro abierto para que la gente tenga confianza de hablar de su sexualidad.
+                </p>
+            </article>
+            <article>
+                <a href="informacion.html#d2">
+                    <h2 class="titulo">IMPORTANCIA DE LA SALUD SEXUAL.</h2>
+                </a>
+                <p>
+                    La salud sexual es un estado de bienestar físico, mental y social en relación con la sexualidad. 
+                    Requiere un enfoque positivo y respetuoso de la sexualidad y de las relaciones sexuales, así como
+                    la posibilidad de tener experiencias sexuales placenteras y seguras, libres de toda coacción, 
+                    discriminación y violencia.
+                    Por tanto, contribuye al bienestar y la felicidad personal.
+                </p>
+            </article>
+            <article class="formulario">
+                <form action="">
+                    <h2 class="titulocontacto">CONTACTO</h2>
+                    <input type="text" name="Nombre" placeholder="Nombre">
+                    <input type="text" name="Correo" placeholder="Correo">
+                    <input type="text" name="Teléfono" placeholder="Teléfono">
+                    <textarea name="mensaje" placeholder="Escriba aquí su mensaje."></textarea>
+                    <input type="button" value="ENVIAR" id="botonenviar">
+                </form>
+            </article>
+        </section>
+        <aside>
+            <div class="widget">
+                <div class="imagen">
+                    <img src="./images/fotoindex.jpg" width="344.5" height="200">
+                </div>
+            </div>
+            <div class="widget">
+                <div class="imagen">
+                        <img id="myImg" src="./images/grafica1.png" alt="GRÁFICA:)" style="width:344.5px">
+                        <div id="myModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
+                        <script src="./js/modal.js" language="JavaScript" type="text/javascript"></script>
+                </div>
+            </div>
+            <div class="widget">
+                <div class="imagen">
+                    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15048.05077452506!2d-99.1843980818437!3d19.455019522571735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8bd9777a765%3A0x57501a5479751d18!2sCentro%20de%20Estudios%20Cient%C3%ADficos%20y%20Tecnol%C3%B3gicos%20N%C2%B0%209%20%22Juan%20de%20Dios%20B%C3%A1tiz%22%20IPN!5e0!3m2!1ses-419!2smx!4v1616810577603!5m2!1ses-419!2smx" width="344.5" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </aside>
+        <footer>
+            <section class="numerofooter">
+                <a href="tel:5537325700" class="phone">
+                    <span><i class="fas fa-phone" aria-hidden=true></i></span>
+                </a>
+            </section>
+            <section class="nombresfooter">
+                De la Cruz Fuentes Diego&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                González Reséndiz Erick&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Montero Molina Alberto&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                Pérez García Benjamín Arturo&nbsp;&nbsp;
+                Salas Aguilar Alejandro&nbsp;&nbsp;
+                Sánchez Romero Eduardo Alberto&nbsp;&nbsp;
+            </section>
+            <div class="social">
+                <ul>
+                    <li><a href="https://www.facebook.com/Healthy-Sex-103772591813714" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/healthysex_21/" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/HEALTHYSEX3" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
